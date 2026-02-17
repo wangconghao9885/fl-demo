@@ -1,0 +1,16 @@
+# 1) crear entorno
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 2) instalar deps
+pip install -r requirements.txt
+
+# 3) (opcional pero recomendado) predescargar MNIST
+python prepare_data.py
+
+# 4) lanzar demo (server + 3 clientes)
+chmod +x run_demo.sh
+bash run_demo.sh
+
+# 5) plot rápido del accuracy global
+python plot_logs.py logs/server_metrics.jsonl
