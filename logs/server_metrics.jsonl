@@ -1,0 +1,12 @@
+{"ts": "2026-11-18T08:37:09.687389", "round": 0, "centralized_loss": 2.3088425056457518}
+{"ts": "2026-11-18T08:37:09.687389", "round": 1, "centralized_loss": 0.8866203374862671}
+{"ts": "2026-11-18T08:37:09.687389", "round": 2, "centralized_loss": 0.199160113799572}
+{"ts": "2026-11-18T08:37:09.687389", "round": 3, "centralized_loss": 0.09817479266300798}
+{"ts": "2026-11-18T08:37:09.687389", "round": 4, "centralized_loss": 0.07959635528028011}
+{"ts": "2026-11-18T08:37:09.687389", "round": 5, "centralized_loss": 0.08122826788946987}
+{"ts": "2026-11-18T08:37:09.687389", "round": 0, "centralized_accuracy": 0.0892}
+{"ts": "2026-11-18T08:37:09.687389", "round": 1, "centralized_accuracy": 0.7986}
+{"ts": "2026-11-18T08:37:09.687389", "round": 2, "centralized_accuracy": 0.9385}
+{"ts": "2026-11-18T08:37:09.687389", "round": 3, "centralized_accuracy": 0.9679}
+{"ts": "2026-11-18T08:37:09.687389", "round": 4, "centralized_accuracy": 0.9739}
+{"ts": "2026-11-18T08:37:09.687389", "round": 5, "centralized_accuracy": 0.9735}

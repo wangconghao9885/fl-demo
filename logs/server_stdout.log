@@ -1,0 +1,102 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=5, no round_timeout
+[92mINFO [0m:      Flower ECE: gRPC server running (5 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+I1118 16:36:49.631847 2219646 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1118 16:36:49.676648 2219646 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1118 16:36:49.695743 2219646 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      initial parameters (loss, other metrics): 2.3088425056457518, {'accuracy': 0.0892}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      fit progress: (1, 0.8866203374862671, {'accuracy': 0.7986}, 2.8540536250075093)
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      fit progress: (2, 0.199160113799572, {'accuracy': 0.9385}, 6.428523958005826)
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      fit progress: (3, 0.09817479266300798, {'accuracy': 0.9679}, 9.86501304100966)
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      fit progress: (4, 0.07959635528028011, {'accuracy': 0.9739}, 13.372978915998829)
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      fit progress: (5, 0.08122826788946987, {'accuracy': 0.9735}, 16.894588416005718)
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 5 round(s) in 17.50s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 0.8866203427314758
+[92mINFO [0m:      		round 2: 0.1991601139307022
+[92mINFO [0m:      		round 3: 0.0981747955083847
+[92mINFO [0m:      		round 4: 0.07959635555744171
+[92mINFO [0m:      		round 5: 0.08122827112674713
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 2.3088425056457518
+[92mINFO [0m:      		round 1: 0.8866203374862671
+[92mINFO [0m:      		round 2: 0.199160113799572
+[92mINFO [0m:      		round 3: 0.09817479266300798
+[92mINFO [0m:      		round 4: 0.07959635528028011
+[92mINFO [0m:      		round 5: 0.08122826788946987
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'dropped': [(1, 0.0), (2, 0.0), (3, 0.0), (4, 0.0), (5, 0.0)],
+[92mINFO [0m:      	 'train_acc': [(1, 0.8623055555555555),
+[92mINFO [0m:      	               (2, 0.9663611111111111),
+[92mINFO [0m:      	               (3, 0.9790277777777778),
+[92mINFO [0m:      	               (4, 0.9846111111111111),
+[92mINFO [0m:      	               (5, 0.9865555555555555)],
+[92mINFO [0m:      	 'train_loss': [(1, 0.419161991847886),
+[92mINFO [0m:      	                (2, 0.10991101470155021),
+[92mINFO [0m:      	                (3, 0.06447585544031527),
+[92mINFO [0m:      	                (4, 0.04919106400426891),
+[92mINFO [0m:      	                (5, 0.042358483762894236)]}
+[92mINFO [0m:      	History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'accuracy': [(1, 0.7986), (2, 0.9385), (3, 0.9679), (4, 0.9739), (5, 0.9735)]}
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'accuracy': [(0, 0.0892),
+[92mINFO [0m:      	              (1, 0.7986),
+[92mINFO [0m:      	              (2, 0.9385),
+[92mINFO [0m:      	              (3, 0.9679),
+[92mINFO [0m:      	              (4, 0.9739),
+[92mINFO [0m:      	              (5, 0.9735)]}
+[92mINFO [0m:      
+/Users/wangch/Documents/实验/FedAvg/fl-demo/server.py:96: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow().isoformat()
+Starting Flower server at 127.0.0.1:8080 for 5 rounds
+Logs: logs/server_stdout.log, logs/server_metrics.jsonl, logs/history_dump.json
+Server finished.

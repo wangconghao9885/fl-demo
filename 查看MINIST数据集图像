@@ -1,0 +1,27 @@
+import random
+import matplotlib.pyplot as plt
+from torchvision import datasets, transforms
+
+# 加载训练集
+train_dataset = datasets.MNIST(
+    root='./data',
+    train=True,
+    download=True,
+    transform=transforms.ToTensor()
+)
+
+# 随机取 25 个不重复的索引
+random_indices = random.sample(range(len(train_dataset)), 25)
+
+# 5 行 5 列，共 25 个格子
+fig, axes = plt.subplots(5, 5, figsize=(12, 12))
+
+for i, ax in enumerate(axes.flat):
+    idx = random_indices[i]              # 用随机索引去取样本
+    image, label = train_dataset[idx]
+    ax.imshow(image.squeeze(), cmap='gray')
+    ax.set_title(f"Label: {label}\nidx: {idx}", fontsize=9)
+    ax.axis('off')
+
+plt.tight_layout()
+plt.show()
